@@ -16,8 +16,9 @@ namespace FluentTutorialApp.Configuration
 
         public SqlLiteDbConfiguration InMemory()
         {
+            Raw("connection.release_mode", "on_close");
             return ConnectionString(c => c
-                .Is("Data Source=:memory:"));
+                .Is("Data Source=people; Mode=Memory; Cache=Shared"));
             
         }
 
