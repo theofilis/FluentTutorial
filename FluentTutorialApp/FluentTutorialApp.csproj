@@ -5,6 +5,7 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="FluentNHibernate" Version="2.1.2" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="2.1.0-rc1-final" />
     <PackageReference Include="NHibernate" Version="5.1.2" />
     <PackageReference Include="Npgsql" Version="4.0.0-rc1" />
   </ItemGroup>

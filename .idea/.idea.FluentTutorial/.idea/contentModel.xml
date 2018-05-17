@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="$USER_HOME$/.Rider2018.1/system/resharper-host/local/Transient/ReSharperHost/v12/SolutionCaches/_FluentTutorial.629717495.00" t="ExcludeRecursive" />
-    <e p="$PROJECT_DIR$" t="IncludeFlat">
+    <e p="C:\Users\George Theofilis\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_FluentTutorial.-1948917945.00" t="ExcludeRecursive" />
+    <e p="C:\Users\George Theofilis\Documents\Projects\FluentTutorial" t="IncludeFlat">
       <e p="FluentTutorial.sln" t="IncludeFlat" />
       <e p="FluentTutorialApp" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Configuration" t="Include">
+          <e p="SqlLiteDbConfiguration.cs" t="Include" />
+          <e p="SqlLiteDriver.cs" t="Include" />
+        </e>
+        <e p="firstProject.db" t="Include" />
         <e p="FluentTutorialApp.csproj" t="IncludeRecursive" />
         <e p="Mappings" t="Include">
           <e p="EmployeeMap.cs" t="Include" />
@@ -16,8 +22,6 @@
           <e p="Product.cs" t="Include" />
           <e p="Store.cs" t="Include" />
         </e>
-        <e p="Program.cs" t="Include" />
-        <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.0" t="Include">
@@ -25,6 +29,7 @@
             </e>
           </e>
         </e>
+        <e p="Program.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>

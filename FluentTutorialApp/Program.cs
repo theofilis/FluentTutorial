@@ -1,10 +1,8 @@
 ﻿using System;
-using System.IO;
 using FluentNHibernate.Cfg;
-using FluentNHibernate.Cfg.Db;
+using FluentTutorialApp.Configuration;
 using FluentTutorialApp.Models;
 using NHibernate;
-using NHibernate.Cfg;
 using NHibernate.Tool.hbm2ddl;
 
 namespace FluentTutorialApp
@@ -81,14 +79,14 @@ namespace FluentTutorialApp
             const string connectionString = "Server=localhost;Database=nhibernate;User ID=dbuser;Password=dbpass;Enlist=true;";
             
             return Fluently.Configure()
-                .Database(PostgreSQLConfiguration.PostgreSQL82.ConnectionString(connectionString))
+                .Database(SqlLiteDbConfiguration.Standard.UsingFile("firstProject.db"))
                 .Mappings(m =>
                     m.FluentMappings.AddFromAssemblyOf<Program>())
                 .ExposeConfiguration(BuildSchema)
                 .BuildSessionFactory();
         }
         
-        private static void BuildSchema(Configuration config)
+        private static void BuildSchema(NHibernate.Cfg.Configuration config)
         {
             // this NHibernate tool takes a configuration (with mapping info in)
             // and exports a database schema from it
